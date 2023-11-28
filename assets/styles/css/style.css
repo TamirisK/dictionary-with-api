@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited, a:hover, a:link {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*=============== VARIABLES SCSS ===============*/
+/*========== Colors ==========*/
+/*========== Font ==========*/
+/*========== Typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+/* Responsive typography */
+body {
+  background-color: rgb(75, 178, 218);
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 80vw;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 80px 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+          box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+  background-color: #f0f4f9;
+}
+
+.search__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.search__box input {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(75, 178, 218);
+  font-size: 1.5rem;
+}
+.search__box button {
+  padding: 15px 0;
+  width: 25%;
+  background-color: rgb(75, 178, 218);
+  border: none;
+  outline: none;
+  color: #f0f4f9;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.result {
+  position: relative;
+}
+.result h3 {
+  font-size: 1.75rem;
+  color: #283779;
+}
+.result .word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+.result .word button {
+  background-color: transparent;
+  color: rgb(75, 178, 218);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.result .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  color: #7b7a8b;
+  margin: 5px 0 20px 0;
+  font-size: 1rem;
+}
+.result .word__meaning {
+  color: #464558;
+}
+.result .word__example {
+  color: #464558;
+  font-style: italic;
+  border-left: 5px solid rgb(75, 178, 218);
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.result .error {
+  margin-top: 80px;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.svg" />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <audio id="sound"></audio>
+    <section class="dictionary container">
+      <div class="search__box">
+        <input
+          type="search__text"
+          placeholder="Type the word here.."
+          id="input__word"
+        />
+        <button id="search__btn">Search</button>
+      </div>
+      <div class="result" id="result"></div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
